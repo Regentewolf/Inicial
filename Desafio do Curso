@@ -32,20 +32,17 @@ if (!isNaN(idade)) {
     console.log("Por favor, insira um número válido.");
 };
 
-let numero = Number(prompt("Digite um número:"));
+// Criação da variável 'número' e atribuição do valor usando prompt
+let numero = parseFloat(prompt("Digite um número:"));
 
-if (isNaN(numero)) {
-    alert("Por favor, digite um número válido.");
-} 
-else if (numero > 0) {
-    alert("O número é positivo.");
-} 
-else if (numero < 0) {
-    alert("O número é negativo.");
-} 
-else {
-    alert("O número é zero.");
-};
+// Verificando se o número é positivo, negativo ou zero
+if (numero > 0) {
+    console.log("O número é positivo.");
+} else if (numero < 0) {
+    console.log("O número é negativo.");
+} else {
+    console.log("O número é zero.");
+}
 
 let numero2 = 1;
 
@@ -53,3 +50,31 @@ while (numero2 <= 10) {
     console.log(numero2);
     numero2++;
 }
+
+// Criação da variável 'nota' e atribuição de um valor numérico
+let nota = 6;  
+
+// Verificando se a nota é maior ou igual a 7
+if (nota >= 7) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+// Gerando um número aleatório entre 0 (inclusive) e 1 (exclusivo)
+let numeroAleatorio = Math.random();
+
+// Exibindo o número aleatório no console
+console.log("Número aleatório gerado: " + numeroAleatorio);
+
+// Gerando um número inteiro aleatório entre 1 e 10
+let numeroAleatorioInteiro = Math.floor(Math.random() * 10) + 1;
+
+// Exibindo o número aleatório no console
+console.log("Número aleatório entre 1 e 10: " + numeroAleatorioInteiro);
+
+// Gerando um número inteiro aleatório entre 1 e 1000
+let numeroAleatorio2 = Math.floor(Math.random() * 1000) + 1;
+
+// Exibindo o número aleatório no console
+console.log("Número aleatório entre 1 e 1000: " + numeroAleatorio2);
