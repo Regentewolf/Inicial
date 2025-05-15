@@ -1,41 +1,45 @@
-console.log("Seja muito Bem-vindo(a)!");
-let nome = "Vanderley";
+console.log("Seja muito Bem-vindo!");
 
-console.log("Olá, " + nome + "!");
+let nome = "Vanderley";
+console.log(`Olá, ${nome}!`);
 alert(`Olá, ${nome}!`);
 
 let linguagemFavorita = prompt("Qual a linguagem de programação que você mais gosta?");
-console.log("A linguagem de programação que você mais gosta é: " + linguagemFavorita);
+console.log(linguagemFavorita);
 
 // Definindo as variáveis valor1 e valor2 com valores numéricos
 let valor1 = 20;
 let valor2 = 7;
-
 let resultado = valor1 + valor2;
 // Mostrando a mensagem no console
-console.log("A soma de " + valor1 + " e " + valor2 + " é igual a " + resultado + ".");
+
+console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultado}.`)
+// console.log("A soma de " + valor1 + " e " + valor2 + " é igual a " + resultado + "."); 2 formas diferentes
 
 let resultado2 = valor1 - valor2; 
 console.log(`A diferença entre ${valor1} e ${valor2} é igual a ${resultado2}`);
 // so lembrando que existem 2 formas dentro do console que seria com aspas ou sifrão
 
-let idade = prompt("Por favor, insira sua idade:");
+let idade = prompt('Digite a sua idade:');
+if (idade > 17) {
+    console.log('Você é maior de idade.');
+} else {
+    console.log('Você é menor de idade.');
+}
 
 // Verifica se a idade é válida
-if (!isNaN(idade)) {
-    if (idade >= 18) {
-        console.log("Você é maior de idade.");
-    } else {
-        console.log("Você é menor de idade.");
-    }
-} else {
-    console.log("Por favor, insira um número válido.");
-};
+// if (!isNaN(idade)) {
+    // if (idade >= 18) {
+        // console.log("Você é maior de idade.");
+    // } else {
+        // console.log("Você é menor de idade.");
+    // }
+// } else {
+    // console.log("Por favor, insira um número válido.");
+// };
 
-// Criação da variável 'número' e atribuição do valor usando prompt
-let numero = parseFloat(prompt("Digite um número:"));
+var numero = parseFloat(prompt("Digite um número:"));
 
-// Verificando se o número é positivo, negativo ou zero
 if (numero > 0) {
     console.log("O número é positivo.");
 } else if (numero < 0) {
@@ -49,10 +53,10 @@ let numero2 = 1;
 while (numero2 <= 10) {
     console.log(numero2);
     numero2++;
-}
+};
 
 // Criação da variável 'nota' e atribuição de um valor numérico
-let nota = 6;  
+let nota = 10;
 
 // Verificando se a nota é maior ou igual a 7
 if (nota >= 7) {
